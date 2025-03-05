@@ -1,28 +1,27 @@
 # Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
-client_id = "2d18b2d8ad9ff640e0a32bfa7c538403"
-application_url = "https://mt-even-employed-brooks.trycloudflare.com"
+client_id = "c8bc7b94c63e9cf14dcc95588a9ee341"
+application_url = "https://metamatrix-106b9e369b5e.herokuapp.com/"
 embedded = true
-name = "dashboard"
-handle = "dashboard-134"
-
-[build]
-include_config_on_deploy = true
-automatically_update_urls_on_dev = true
+name = "api-test"
+handle = "api-test-145"
 
 [webhooks]
 api_version = "2025-01"
 
 [access_scopes]
 # Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
-scopes = "write_products"
+scopes = "read_products,write_products"
 
 [auth]
 redirect_urls = [
-  "https://mt-even-employed-brooks.trycloudflare.com/auth/callback",
-  "https://mt-even-employed-brooks.trycloudflare.com/auth/shopify/callback",
-  "https://mt-even-employed-brooks.trycloudflare.com/api/auth/callback"
+  "https://metamatrix-106b9e369b5e.herokuapp.com/auth/callback",
+  "https://metamatrix-106b9e369b5e.herokuapp.com/auth/shopify/callback",
+  "https://metamatrix-106b9e369b5e.herokuapp.com/api/auth/callback"
 ]
 
 [pos]
 embedded = false
+
+[build]
+include_config_on_deploy = true
